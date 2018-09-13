@@ -1,12 +1,7 @@
-import { Get, OnModuleInit, Controller } from '@nestjs/common';
-import {
-  ClientProxy,
-  Client,
-  MessagePattern,
-  GrpcMethod,
-  ClientGrpc,
-} from '@nestjs/microservices';
+import { Controller, Get, OnModuleInit } from '@nestjs/common';
+import { Client, ClientGrpc, GrpcMethod } from '@nestjs/microservices';
 import { Observable } from 'rxjs';
+
 import { grpcClientOptions } from './../grpc-client.options';
 import { HeroById } from './interfaces/hero-by-id.interface';
 import { Hero } from './interfaces/hero.interface';

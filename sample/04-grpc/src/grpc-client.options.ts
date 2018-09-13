@@ -6,5 +6,13 @@ export const grpcClientOptions: ClientOptions = {
   options: {
     package: 'hero',
     protoPath: join(__dirname, './hero/hero.proto'),
+    loader: {
+      arrays: true,
+      keepCase: true,
+      longs: String,
+      enums: String,
+      defaults: true,
+      oneofs: true
+    }
   },
 };
